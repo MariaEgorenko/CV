@@ -1,0 +1,229 @@
+@font-face {
+    font-family: ubuntu;
+    src: url("resources/font/Ubuntu-Regular.ttf");
+}
+
+* {
+    font-family: ubuntu;
+}
+
+.wrapper {
+    width: 1060px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 50px rgba(156, 155, 158, 0.89);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.overlay {
+    background-color: rgba(183, 164, 123, 0.75);
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_photo {
+    float: right;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 35px;
+}
+
+.header_title {
+    text-align: center;
+    color: rgb(91, 91, 91);
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.header_subtitle {
+    text-align: center;
+    color:rgb(91, 91, 91);
+    font-size: 30px;
+    margin-left: 200px;
+}
+
+.nav_list {
+    background-color:rgba(255, 255, 255, 0.89);
+    height: 30px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 7px 25px 7px 25px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.nav_item {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav_item:hover {
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    padding-right: 0;
+    margin-top: -20px;
+}
+
+.aside_boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(212, 212, 212, 0.3);
+    padding-right: 15px;
+    padding-left: 15px;
+    cursor: default;
+}
+
+.aside_box {
+    margin-left: 20px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.aside_boxes_name {
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.aside_boxes_name::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.aside_boxes_name:hover::after, .aside_boxes_name:focus::after {
+    width: 200px;
+}
+
+.aside_box_contact_list {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+    padding-left: 0px;
+}
+
+a:hover {
+    color: rgba(60, 60, 63, 0.67);
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.tel {
+    background: url("resources/telephone.png") no-repeat 0 0;
+    background-size: 23px;
+    padding-left: 30px;
+}
+
+.mail {
+    background: url("resources/email.png") no-repeat 0 0;
+    background-size: 23px;
+    padding-left: 30px;
+}
+
+.telegram {
+    background: url("resources/telegram.png") no-repeat 0 0;
+    background-size: 23px;
+    padding-left: 30px;
+}
+
+.linkedin {
+    background: url("resources/linkedin.png") no-repeat 0 0;
+    background-size: 22px;
+    padding-left: 30px;
+}
+
+.github {
+    background: url("resources/github.png") no-repeat 0 0;
+    background-size: 23px;
+    padding-left: 30px;
+}
+
+.location {
+    background: url("resources/location.png") no-repeat 0 0;
+    background-size: 23px;
+    padding-left: 30px;
+}
+
+.aside_box_education_list {
+    color: black;
+    margin-bottom: 25px;
+    padding-left: 0px;
+}
+
+.aside_box_education_list li {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.sertificat {
+    background: url("resources/arrow-right.png") no-repeat 0 0;
+    background-size: 23px;
+    padding-left: 30px;
+}
+
+.skills_list li {
+    list-style-image: url("resources/checkbox-mark.png");
+    margin-left: -20px;
+}
+
+.main_content {
+    font-size: 20px;
+    background-color: rgb(225, 217, 205);
+    cursor: default;
+}
+
+.main_box {
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.skill_item{
+    font-weight: bold;
+}
+
+.aside_box_language {
+    list-style: none;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
