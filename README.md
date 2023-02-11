@@ -1,1 +1,1 @@
-### https://mariaegorenko.github.io/CV/
+### https://mariaegorenko.github.io/cv/
