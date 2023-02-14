@@ -55,11 +55,13 @@ html {
     list-style: none;
     justify-content: space-between;
     padding: 5px 25px;
-    margin: 0;
 }
+
+.nav_list li {
+    margin: auto 0;
+}
+
 .nav_list li a{
-    color: black;
-    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -85,11 +87,6 @@ section h2 {
     font-weight: bold;
     font-size: 40px;
     margin: 30px 0px 15px;
-    transition: 0.4s;
-}
-
-section h2:hover::after, section h2:focus::after {
-    width: 200px;
 }
 
 section h2::after {
@@ -100,8 +97,13 @@ section h2::after {
     height: 3px;
     background-color: black;
     content: "";
-    transition: width 0.4s ease-out;
+    transition: width 0.4s;
 }
+
+section h2:hover::after{
+    width: 200px;
+}
+
 
 a:hover {
     color: rgba(60, 60, 63, 0.67);
@@ -112,11 +114,14 @@ ul {
     margin: 0px;
 }
 
-li, a {
+li {
     list-style: none;
+    margin: 7.5px 0px;
+}
+
+a {
     text-decoration: none;
     color: black;
-    margin: 7.5px 0px;
 }
 
 #tel {
@@ -155,20 +160,60 @@ li, a {
     padding-left: 30px;
 }
 
-.education_list li{
-    list-style: disc;
-    list-style-position: inside;
+.education_list li {
+    position: relative;
+}
+
+.education_list li::before {
+    content: "";
+    border-left: 2px solid rgb(225, 217, 205);
+    position: absolute;
+    height: 110%;
+    left: -20px;
+}
+
+.list_item_title::after {
+    content: "";
+    border-bottom: 2px solid rgb(225, 217, 205);
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 20px;
+}
+
+.list_item_title {
+    display: inline-block;
+    border-radius: 7px;
+    background-color: rgb(225, 217, 205);
+    padding: 0px 5px;
+    margin: 7px 0px;
+}
+
+.specialty {
+    display: inline-block;
+    border-radius: 7px;
+    background-color: rgb(188, 188, 188);
+    color: white;
+    padding: 0px 5px;
+    margin: 7px 0px;
 }
 
 .sertificat {
     background: url("resources/arrow-right.png") no-repeat 0 0;
     background-size: 23px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
-.skills_list li {
-    list-style-image: url("resources/checkbox-mark.png");
-    list-style-position: inside;
+.skills_list li::before {
+    color:rgba(60, 60, 63, 0.67);
+    padding-right: 10px;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+
+.skills_list li:hover::before {
+    color: black;
+    content: "\2714";
 }
 
 .main_content {
@@ -180,6 +225,6 @@ li, a {
     padding: 0px 15px 0px 30px;
 }
 
-.skill_item{
+.skills_list span {
     font-weight: bold;
 }
