@@ -105,7 +105,7 @@ section h2::after {
     transition: width 0.4s;
 }
 
-section h2:hover::after{
+section h2:hover::after {
     width: 200px;
 }
 
@@ -203,7 +203,7 @@ a {
     margin: 7px 0px;
 }
 
-.sertificat {
+.underline {
     text-decoration: 1px underline;
 }
 
