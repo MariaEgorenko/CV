@@ -29,16 +29,23 @@ html {
 
 .lang button {
     font-size: 15px;
-    background-color: transparent;
-    border: 1px solid;
+    background-color: #bdae91;
+    border: none;
     cursor: pointer;
     float: left;
     border-radius: 0 5px 5px 0;
     padding: 3px 10px;
 }
 
+.lang button a {
+    color: #5B5B5B;
+}
+
+.lang button[active] {
+    background-color: #B2A489;
+}
+
 .lang button:not(:last-child) {
-    border-right: none;
     border-radius: 5px 0 0 5px;
 }
 
