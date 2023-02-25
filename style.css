@@ -22,6 +22,26 @@ html {
     scroll-behavior: smooth;
 }
 
+.lang {
+    position: absolute;
+    margin: 15px 25px;
+}
+
+.lang button {
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    float: left;
+    border-radius: 0 5px 5px 0;
+    padding: 3px 10px;
+}
+
+.lang button:not(:last-child) {
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
 .wrapper {
     width: 1060px;
     margin: 40px auto;
